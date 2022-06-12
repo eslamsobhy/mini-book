@@ -59,3 +59,8 @@ h4 {
   font-size: 0.75rem;
   margin-top: 0.25rem;
 }
+
+img {
+  height: 193px;
+  width: auto;
+}
