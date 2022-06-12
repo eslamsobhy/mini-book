@@ -11,6 +11,24 @@ body {
   color: 222;
 }
 
+.header {
+  width: 100%;
+  text-align: center;
+  height: 140px;
+  background: radial-gradient(#0a99af, #057586);
+  color: #fff;
+  padding-top: 25px;
+  /* line-height: 20px; */
+  font-family: "Amazon Ember", Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+.header h1 {
+  letter-spacing: 10px;
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
 .booklist {
   width: 90vw;
   max-width: 1170px;

@@ -4,6 +4,24 @@ import ReactDom from "react-dom";
 //CSS
 import "./index.css";
 
+const Container = () => {
+  return (
+    <div>
+      <Header />
+      <BookList />
+    </div>
+  );
+};
+
+const Header = () => {
+  return (
+    <header className="header">
+      <h1>Best Sellers</h1>
+      <p>Our most popular products based on sales. Updated hourly.</p>
+    </header>
+  );
+};
+
 function BookList() {
   return (
     <section className="booklist">
@@ -48,4 +66,4 @@ const Author = () => (
   </h4>
 );
 
-ReactDom.render(<BookList />, document.getElementById("root"));
+ReactDom.render(<Container />, document.getElementById("root"));
