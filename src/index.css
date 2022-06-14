@@ -47,10 +47,14 @@ body {
   background: #fff;
   border-radius: 1rem;
   padding: 1rem 2rem;
+  overflow: hidden;
 }
 
 .book h1 {
   margin-top: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .book p {
