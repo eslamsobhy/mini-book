@@ -112,13 +112,42 @@ function BookList() {
   );
 }
 
-const Book = (props) => {
-  const { img, title, author, alt } = props;
+const Book = ({ img, title, author, alt }) => {
+  // const { img, title, author, alt } = props;
+
+  //attribute, eventHandler
+  //onClick, onMouseOver
+
+  const eventHandler = (e) => {
+    console.log(e);
+    console.log(e.target);
+    console.log("Button clicked");
+  };
+
+  const moreComplex = (author) => {
+    console.log(author);
+  };
+
   return (
-    <article className="book">
+    <article
+      className="book"
+      onMouseOver={() => {
+        console.log(title + " written by " + author);
+      }}
+    >
       <img src={img} alt={alt} />
-      <h1 title={title}>{title}</h1>
+
+      {/* inline event handler*/}
+      <h1 title={title} onClick={() => console.log(title)}>
+        {title}
+      </h1>
       <h4>{author}</h4>
+      <button type="button" onClick={eventHandler}>
+        click me
+      </button>
+      <button type="button" onClick={() => moreComplex(author)}>
+        complexExample
+      </button>
     </article>
   );
 };
